@@ -3,6 +3,7 @@ import React from 'react'
 import Title from '@components/Title'
 import Pill from '@components/Pill'
 import ArrowButton from '@components/ArrowButton'
+import LayoutDefault from '@templates/LayoutDefault'
 
 const Home = () => {
   return (
@@ -13,9 +14,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Title text="teste" />
-      <Pill text="Front-end developer" />
-      <ArrowButton onClick={() => console.log('oi')} />
+      <LayoutDefault>
+        <Title text="teste" />
+        <Pill text="Front-end developer" />
+        <ArrowButton onClick={() => console.log('oi')} />
+      </LayoutDefault>
     </div>
   )
 }
