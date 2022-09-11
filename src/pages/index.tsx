@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Title from '../components/Title'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Portifólio</h1>
+      <Title text="teste" />
     </div>
   )
 }
