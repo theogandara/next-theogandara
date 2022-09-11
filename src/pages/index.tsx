@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Title from '@components/Title'
 import Pill from '@components/Pill'
+import ArrowButton from '@components/ArrowButton'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
 
       <Title text="teste" />
       <Pill text="Front-end developer" />
+      <ArrowButton onClick={() => console.log('oi')} />
     </div>
   )
 }
