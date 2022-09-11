@@ -13,7 +13,4 @@ export const Container = styled.div`
   background-color: ${theme.colors.primary};
   letter-spacing: 3px;
   border-radius: 10px;
-
-  @media (min-width: 1024px) {
-  }
 `
