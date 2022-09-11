@@ -6,4 +6,9 @@ export const Button = styled.button`
   height: 64px;
   border-radius: 50%;
   background-color: ${theme.colors.orange + '29'};
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: ${theme.colors.orange + '7A'};
+  }
 `
