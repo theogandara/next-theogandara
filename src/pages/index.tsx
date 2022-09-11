@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
-import Title from '../components/Title'
+import Title from '@components/Title'
+import Pill from '@components/Pill'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
 
       <Title text="teste" />
+      <Pill text="Front-end developer" />
     </div>
   )
 }
