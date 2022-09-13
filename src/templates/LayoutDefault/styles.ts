@@ -5,20 +5,25 @@ export const Background = styled.div`
   height: 100vh;
   background-color: black;
   position: relative;
-  opacity: 0.7;
-  backdrop-filter: blur(13.5px);
+  background-image: linear-gradient(
+    to bottom right,
+    #00a3ff,
+    #001affde,
+    #fa00ff
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `
 export const BackgroundBlur = styled.div`
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 10;
-  backdrop-filter: unset;
+  background-image: linear-gradient(to bottom right, #000000c4, #000000bf);
 `
 export const PinkBuble = styled.div`
   background-color: #fa00ff;
   width: 50vw;
   height: 90vh;
   position: absolute;
-  opacity: 0.2;
 `
