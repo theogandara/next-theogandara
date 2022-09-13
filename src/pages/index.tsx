@@ -3,7 +3,7 @@ import React from 'react'
 import Title from '@components/Title'
 import Pill from '@components/Pill'
 import ArrowButton from '@components/ArrowButton'
-import LayoutDefault from '@templates/LayoutDefault'
+import LayoutDefault from 'layouts/LayoutDefault'
 
 const Home = () => {
   return (
