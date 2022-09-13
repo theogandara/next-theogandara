@@ -10,7 +10,7 @@ const Name: React.FC = () => {
   return (
     <LayoutDefault>
       <S.Container>
-        <div>em andamento...</div>
+        <div style={{ marginBottom: '40px' }}>em andamento... :)</div>
         <Pill text="Front End Developer" />
         <Title text="Théo Gândara" />
         <SubTitle text="Seja bem-vindo ao meu portifólio !" />
