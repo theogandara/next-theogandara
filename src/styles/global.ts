@@ -14,10 +14,10 @@ export default createGlobalStyle`
         overflow-x: hidden;
         background: linear-gradient(90deg, #00a3ff, #001aff, #fa00ff);
         background-size: 200% 200%;
-        -webkit-animation: AnimationName 6s ease infinite;
-        -moz-animation: AnimationName 6s ease infinite;
-        -o-animation: AnimationName 6s ease infinite;
-        animation: AnimationName 6s ease infinite;
+        -webkit-animation: AnimationName 8s ease infinite;
+        -moz-animation: AnimationName 8s ease infinite;
+        -o-animation: AnimationName 8s ease infinite;
+        animation: AnimationName 8s ease infinite;
 
         @-webkit-keyframes AnimationName {
           0% {
