@@ -4,7 +4,7 @@ import React from 'react'
 import * as S from './styles'
 
 interface ArrowButtonProps {
-  onClick: () => void
+  onClick?: () => void
   variant?: 'Down' | 'Up'
 }
 

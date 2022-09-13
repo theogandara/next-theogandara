@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import Title from '@components/Title'
-import Pill from '@components/Pill'
-import ArrowButton from '@components/ArrowButton'
-import LayoutDefault from 'layouts/LayoutDefault'
+import Name from '@templates/Name'
 
 const Home = () => {
   return (
@@ -14,11 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <LayoutDefault>
-        <Title text="teste" />
-        <Pill text="Front-end developer" />
-        <ArrowButton onClick={() => console.log('oi')} />
-      </LayoutDefault>
+      <Name />
     </div>
   )
 }
