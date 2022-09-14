@@ -15,7 +15,7 @@ const Name: React.FC = () => {
         </S.ContainerPill>
 
         <Title text="Théo Gândara" />
-        <SubTitle text="Seja bem-vindo ao meu portifólio ! ainda não terminei :)" />
+        <SubTitle text="Welcome to my portfolio !" />
 
         <S.ContainerButtons>
           <ArrowButton />

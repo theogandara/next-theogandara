@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
-import Name from '@templates/Name'
+import Name from '@templates/1-Name'
+import AboutMe from '@templates/2-AboutMe'
+import WorkStudy from '@templates/3-WorkStudy'
+import MyProjects from '@templates/4-MyProjects'
+import StudyPlan from '@templates/5-StudyPlan'
 
 const Home = () => {
   return (
@@ -12,7 +16,10 @@ const Home = () => {
       </Head>
 
       <Name />
-      <Name />
+      <AboutMe />
+      <WorkStudy />
+      <MyProjects />
+      <StudyPlan />
     </div>
   )
 }
