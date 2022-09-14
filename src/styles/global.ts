@@ -8,6 +8,10 @@ export default createGlobalStyle`
         border: none;
     }
 
+    html{
+      background-color: #000000;
+    }
+
     body {
         color: ${props => props.theme.colors.text};
         font-family: 'Inter', sans-serif;
