@@ -103,4 +103,10 @@ export default createGlobalStyle`
     button{
       cursor: pointer;
     }
+
+    .only-mobile{
+      @media (min-width: 1024px) {
+       display :none ;
+      }
+    }
 `

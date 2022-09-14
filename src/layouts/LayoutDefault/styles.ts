@@ -11,6 +11,7 @@ export const BackgroundBlur = styled.div`
   height: 100vh;
   position: absolute;
   background-image: linear-gradient(to bottom right, #00000080, #00000080);
+  position: relative;
 `
 export const PinkBuble = styled.div`
   background-color: #fa00ff;

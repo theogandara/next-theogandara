@@ -10,11 +10,19 @@ const Name: React.FC = () => {
   return (
     <LayoutDefault>
       <S.Container>
-        <div style={{ marginBottom: '40px' }}>em andamento... :)</div>
-        <Pill text="Front End Developer" />
+        <S.ContainerPill>
+          <Pill text="Front End Developer" />
+        </S.ContainerPill>
+
         <Title text="Théo Gândara" />
-        <SubTitle text="Seja bem-vindo ao meu portifólio !" />
-        <ArrowButton />
+        <SubTitle text="Seja bem-vindo ao meu portifólio ! ainda não terminei :)" />
+
+        <S.ContainerButtons>
+          <ArrowButton />
+          <div className="only-mobile">
+            <ArrowButton />
+          </div>
+        </S.ContainerButtons>
       </S.Container>
     </LayoutDefault>
   )
