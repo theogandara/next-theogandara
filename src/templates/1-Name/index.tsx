@@ -16,7 +16,8 @@ const Name: React.FC = () => {
   }
 
   return (
-    <LayoutDefault id="section-2">
+    <LayoutDefault>
+      <div id="section-1" />
       <S.Container>
         <S.ContainerPill>
           <Pill text="Front End Developer" />

@@ -7,11 +7,26 @@ import React from 'react'
 import * as S from './styles'
 
 const StudyPlan: React.FC = () => {
+  let NextSection
+
+  if (typeof window !== 'undefined') {
+    NextSection = document?.querySelector('#section-1')
+    console.log(NextSection)
+  }
   return (
     <LayoutDefault>
+      <div id="section-5" />
       <S.Container>
         <Title text="Study Plan" />
         <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+        <S.ContainerButtons>
+          <ArrowButton
+            variant="Up"
+            onClick={() =>
+              NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })
+            }
+          />
+        </S.ContainerButtons>
       </S.Container>
     </LayoutDefault>
   )
