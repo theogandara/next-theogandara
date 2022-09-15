@@ -8,8 +8,15 @@ import React from 'react'
 import * as S from './styles'
 
 const Name: React.FC = () => {
+  let NextSection
+
+  if (typeof window !== 'undefined') {
+    NextSection = document?.querySelector('#section-2')
+    console.log(NextSection)
+  }
+
   return (
-    <LayoutDefault>
+    <LayoutDefault id="section-2">
       <S.Container>
         <S.ContainerPill>
           <Pill text="Front End Developer" />
@@ -19,7 +26,11 @@ const Name: React.FC = () => {
         <SubTitle text="Welcome to my portfolio !" />
 
         <S.ContainerButtons>
-          <ArrowButton />
+          <ArrowButton
+            onClick={() =>
+              NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })
+            }
+          />
           <div className="only-mobile translate">
             <StackButton />
           </div>

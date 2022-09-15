@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 
-interface LayoutDefaultProps {
+interface LayoutDefaultProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode
 }
 
