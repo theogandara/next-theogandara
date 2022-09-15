@@ -9,14 +9,9 @@ export default createGlobalStyle`
     }
 
     html{
-      background-color: #000000;
-    }
-
-    body {
-        color: ${props => props.theme.colors.text};
-        font-family: 'Inter', sans-serif;
-        overflow-x: hidden;
-        background: linear-gradient(90deg, #00a3ff, #001aff, #fa00ff);
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      background: linear-gradient(90deg, #00a3ff, #001aff, #fa00ff);
         background-size: 200% 200%;
         -webkit-animation: AnimatedBackground 10s ease infinite;
         -moz-animation: AnimatedBackground 10s ease infinite;
@@ -69,6 +64,14 @@ export default createGlobalStyle`
         }
 
       }
+    }
+
+    body {
+        color: ${props => props.theme.colors.text};
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+
 
      ::-webkit-scrollbar {
       width: 2px;

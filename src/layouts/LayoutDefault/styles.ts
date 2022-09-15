@@ -4,6 +4,7 @@ export const Background = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
+  scroll-snap-align: center;
 `
 export const BackgroundBlur = styled.div`
   width: 100vw;
