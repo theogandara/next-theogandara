@@ -1,5 +1,6 @@
 import ArrowButton from '@components/ArrowButton'
 import Pill from '@components/Pill'
+import StackButton from '@components/StackButton'
 import SubTitle from '@components/SubTitle'
 import Title from '@components/Title'
 import LayoutDefault from 'layouts/LayoutDefault'
@@ -19,8 +20,8 @@ const Name: React.FC = () => {
 
         <S.ContainerButtons>
           <ArrowButton />
-          <div className="only-mobile">
-            <ArrowButton />
+          <div className="only-mobile translate">
+            <StackButton />
           </div>
         </S.ContainerButtons>
       </S.Container>

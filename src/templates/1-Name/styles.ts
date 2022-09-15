@@ -34,6 +34,13 @@ export const ContainerButtons = styled.div`
   bottom: 24px;
   left: 24px;
 
+  .translate {
+    &:hover {
+      transition: all 0.4s;
+      transform: rotate(360deg);
+    }
+  }
+
   @media (min-width: 1024px) {
     bottom: 64px;
     left: 40px;
