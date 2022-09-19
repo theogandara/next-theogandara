@@ -18,7 +18,13 @@ const StudyPlan: React.FC = () => {
       <div id="section-5" />
       <S.Container>
         <Title text="Study Plan" />
+
+        <Pill text="what I'm learning" />
         <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+
+        <Pill text="what I want to learn" />
+        <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+
         <S.ContainerButtons>
           <ArrowButton
             variant="Up"

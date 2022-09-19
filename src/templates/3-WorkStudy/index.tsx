@@ -1,4 +1,5 @@
 import ArrowButton from '@components/ArrowButton'
+import Pill from '@components/Pill'
 import SubTitle from '@components/SubTitle'
 import Title from '@components/Title'
 import LayoutDefault from 'layouts/LayoutDefault'
@@ -18,6 +19,9 @@ const WorkStudy: React.FC = () => {
 
       <S.Container>
         <Title text="Work and Study" />
+        <Pill text="jobs history" />
+        <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+        <Pill text="academic history" />
         <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
         <S.ContainerButtons>
           <ArrowButton

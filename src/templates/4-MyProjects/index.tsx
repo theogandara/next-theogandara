@@ -18,7 +18,6 @@ const MyProjects: React.FC = () => {
 
       <S.Container>
         <Title text="My Projects" />
-        <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
 
         <S.ContainerButtons>
           <ArrowButton
