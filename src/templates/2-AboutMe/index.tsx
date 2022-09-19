@@ -2,8 +2,10 @@ import ArrowButton from '@components/ArrowButton'
 import SubTitle from '@components/SubTitle'
 import Title from '@components/Title'
 import LayoutDefault from 'layouts/LayoutDefault'
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as S from './styles'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const AboutMe: React.FC = () => {
   let NextSection
@@ -12,20 +14,27 @@ const AboutMe: React.FC = () => {
     NextSection = document?.querySelector('#section-3')
     console.log(NextSection)
   }
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
   return (
     <LayoutDefault>
       <div id="section-2" />
 
       <S.Container>
-        <Title text="About Me" />
-        <SubTitle
-          text="Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+        <div data-aos="fade-up">
+          <Title text="About Me" />
+          <SubTitle
+            text="Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
          ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt
-          reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna
-           nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip
+         reprehenderit elit laborum. Nulla Lorem mollit cupidatat irure. Laborum magna
+         nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip
             deserunt reprehenderit elit laborum."
-        />
-
+          />
+        </div>
         <S.ContainerButtons>
           <ArrowButton
             onClick={() =>

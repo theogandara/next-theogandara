@@ -3,8 +3,10 @@ import Pill from '@components/Pill'
 import SubTitle from '@components/SubTitle'
 import Title from '@components/Title'
 import LayoutDefault from 'layouts/LayoutDefault'
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as S from './styles'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const StudyPlan: React.FC = () => {
   let NextSection
@@ -13,18 +15,24 @@ const StudyPlan: React.FC = () => {
     NextSection = document?.querySelector('#section-1')
     console.log(NextSection)
   }
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
   return (
     <LayoutDefault>
       <div id="section-5" />
       <S.Container>
-        <Title text="Study Plan" />
+        <div data-aos="fade-up">
+          <Title text="Study Plan" />
 
-        <Pill text="what I'm learning" />
-        <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+          <Pill text="what I'm learning" />
+          <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
 
-        <Pill text="what I want to learn" />
-        <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
-
+          <Pill text="what I want to learn" />
+          <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+        </div>
         <S.ContainerButtons>
           <ArrowButton
             variant="Up"

@@ -1,9 +1,10 @@
 import ArrowButton from '@components/ArrowButton'
-import SubTitle from '@components/SubTitle'
 import Title from '@components/Title'
 import LayoutDefault from 'layouts/LayoutDefault'
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as S from './styles'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const MyProjects: React.FC = () => {
   let NextSection
@@ -12,13 +13,20 @@ const MyProjects: React.FC = () => {
     NextSection = document?.querySelector('#section-5')
     console.log(NextSection)
   }
+
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
   return (
     <LayoutDefault>
       <div id="section-4" />
 
       <S.Container>
-        <Title text="My Projects" />
-
+        <div data-aos="fade-up">
+          <Title text="My Projects" />
+        </div>
         <S.ContainerButtons>
           <ArrowButton
             onClick={() =>
