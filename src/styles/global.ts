@@ -20,7 +20,7 @@ export default createGlobalStyle`
         font-family: 'Inter', sans-serif;
         overflow-x: hidden;
         scroll-snap-type: y mandatory;
-       background-color: ${theme.colors.black};
+        background-color: ${theme.colors.black};
 
 
      ::-webkit-scrollbar {
