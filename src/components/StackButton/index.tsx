@@ -4,13 +4,9 @@ import * as S from './styles'
 
 interface StackButtonProps {
   onClick?: () => void
-  variant?: 'Down' | 'Up'
 }
 
-const StackButton: React.FC<StackButtonProps> = ({
-  onClick,
-  variant = 'Down'
-}) => {
+const StackButton: React.FC<StackButtonProps> = ({ onClick }) => {
   return (
     <S.Button onClick={onClick}>
       <Stack />

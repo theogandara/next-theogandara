@@ -10,7 +10,7 @@ const Stack = props => (
   >
     <path
       d="M3 12h18M3 6h18M3 18h18"
-      stroke="#009DE0"
+      stroke="#607AFF"
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"

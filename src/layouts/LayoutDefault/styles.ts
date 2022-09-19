@@ -14,7 +14,7 @@ export const BackgroundBlur = styled.div`
   position: relative;
 `
 export const PinkBuble = styled.div`
-  background-color: #fa00ff;
+  background-color: #ff0a78;
   width: 50vw;
   height: 90vh;
   position: absolute;

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import theme from './theme'
 
 export default createGlobalStyle`
     * {
@@ -11,66 +12,15 @@ export default createGlobalStyle`
     html{
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
-      background: linear-gradient(90deg, #00a3ff, #001aff, #fa00ff);
-        background-size: 200% 200%;
-        -webkit-animation: AnimatedBackground 10s ease infinite;
-        -moz-animation: AnimatedBackground 10s ease infinite;
-        -o-animation: AnimatedBackground 10s ease infinite;
-        animation: AnimatedBackground 10s ease infinite;
-
-        @-webkit-keyframes AnimatedBackground {
-          0% {
-            background-position: 0% 55%;
-          }
-          50% {
-            background-position: 100% 46%;
-          }
-          100% {
-            background-position: 0% 55%;
-          }
-        }
-        @-moz-keyframes AnimatedBackground {
-          0% {
-            background-position: 0% 55%;
-          }
-          50% {
-            background-position: 100% 46%;
-          }
-          100% {
-            background-position: 0% 55%;
-          }
-        }
-        @-o-keyframes AnimatedBackground {
-          0% {
-            background-position: 0% 55%;
-          }
-          50% {
-            background-position: 100% 46%;
-          }
-          100% {
-            background-position: 0% 55%;
-          }
-        }
-        @keyframes AnimatedBackground {
-          0% {
-            background-position: 0% 55%;
-          }
-          50% {
-            background-position: 100% 46%;
-          }
-          100% {
-            background-position: 0% 55%;
-          }
-        }
-
       }
-    }
+
 
     body {
         color: ${props => props.theme.colors.text};
         font-family: 'Inter', sans-serif;
         overflow-x: hidden;
         scroll-snap-type: y mandatory;
+       background-color: ${theme.colors.black};
 
 
      ::-webkit-scrollbar {
@@ -115,5 +65,5 @@ export default createGlobalStyle`
       @media (min-width: 1024px) {
        display :none ;
       }
-    }
+    }}
 `
