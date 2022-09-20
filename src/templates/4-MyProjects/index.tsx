@@ -30,21 +30,21 @@ const MyProjects: React.FC = () => {
               data-aos-duration="2000"
               data-aos-delay="350"
             >
-              <Image src={Ifuture} />
+              <Image priority alt="image-project" src={Ifuture} />
             </S.Item>
             <S.Item
               data-aos="fade-down"
               data-aos-duration="2000"
               data-aos-delay="350"
             >
-              <Image src={Ifuture} />
+              <Image priority alt="image-project" src={Ifuture} />
             </S.Item>
             <S.Item
               data-aos="fade-up"
               data-aos-duration="2000"
               data-aos-delay="350"
             >
-              <Image src={Ifuture} />
+              <Image priority alt="image-project" src={Ifuture} />
             </S.Item>
           </S.Flex>
         </div>
