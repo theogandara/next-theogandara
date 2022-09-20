@@ -18,7 +18,10 @@ const Name: React.FC = () => {
   }
 
   useEffect(() => {
-    AOS.init({ throttleDelay: 99, mirror: false })
+    AOS.init({
+      throttleDelay: 99,
+      disable: 'mobile'
+    })
     AOS.refresh()
   }, [])
 

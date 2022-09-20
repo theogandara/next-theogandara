@@ -13,7 +13,6 @@ export default createGlobalStyle`
       scroll-behavior: smooth;
       }
 
-
     body {
         color: ${props => props.theme.colors.text};
         font-family: 'Inter', sans-serif;
