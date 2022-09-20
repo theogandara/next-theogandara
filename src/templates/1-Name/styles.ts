@@ -50,4 +50,17 @@ export const ContainerButtons = styled.div`
     bottom: 50%;
     left: 80px;
   }
+
+  button > svg {
+    animation: go-up 0.7s infinite alternate-reverse;
+  }
+
+  @keyframes go-up {
+    0% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 `
