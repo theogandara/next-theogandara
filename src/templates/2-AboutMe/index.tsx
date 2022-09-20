@@ -9,10 +9,11 @@ import 'aos/dist/aos.css'
 
 const AboutMe: React.FC = () => {
   let NextSection
+  let PrevSection
 
   if (typeof window !== 'undefined') {
     NextSection = document?.querySelector('#section-3')
-    console.log(NextSection)
+    PrevSection = document?.querySelector('#section-1')
   }
 
   return (
@@ -30,13 +31,22 @@ const AboutMe: React.FC = () => {
             deserunt reprehenderit elit laborum."
           />
         </div>
-        <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
+        <S.ContainerButton data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             onClick={() =>
               NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })
             }
           />
-        </S.ContainerButtons>
+        </S.ContainerButton>
+
+        <S.ContainerButtonBack data-aos="fade-left" data-aos-delay="200">
+          <ArrowButton
+            variant="Up"
+            onClick={() =>
+              PrevSection && PrevSection?.scrollIntoView({ behavior: 'smooth' })
+            }
+          />
+        </S.ContainerButtonBack>
       </S.Container>
     </LayoutDefault>
   )

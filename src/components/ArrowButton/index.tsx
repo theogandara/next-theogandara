@@ -13,7 +13,7 @@ const ArrowButton: React.FC<ArrowButtonProps> = ({
   variant = 'Down'
 }) => {
   return (
-    <S.Button onClick={onClick}>
+    <S.Button variant={variant} onClick={onClick}>
       {variant === 'Down' ? <ArrowDown /> : <ArrowUp />}
     </S.Button>
   )

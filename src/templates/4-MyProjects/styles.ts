@@ -27,7 +27,7 @@ export const ContainerPill = styled.div`
     margin-bottom: 24px;
   }
 `
-export const ContainerButtons = styled.div`
+export const ContainerButton = styled.div`
   display: flex;
   gap: 68px;
   position: absolute;
@@ -42,5 +42,20 @@ export const ContainerButtons = styled.div`
   @media (min-width: 1366px) {
     bottom: 50%;
     left: 80px;
+  }
+`
+export const ContainerButtonBack = styled.div`
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+
+  @media (min-width: 1024px) {
+    bottom: 64px;
+    right: 40px;
+  }
+
+  @media (min-width: 1366px) {
+    bottom: 50%;
+    right: 80px;
   }
 `
