@@ -29,6 +29,9 @@
       "@templates/*": [
         "templates/*"
       ],
+      "@images/*": [
+        "images/*"
+      ],
     }
   },
   "include": [

@@ -4,6 +4,8 @@ import LayoutDefault from 'layouts/LayoutDefault'
 import React from 'react'
 import * as S from './styles'
 import 'aos/dist/aos.css'
+import Image from 'next/image'
+import Ifuture from '@images/ifuture.png'
 
 const MyProjects: React.FC = () => {
   let NextSection
@@ -21,6 +23,30 @@ const MyProjects: React.FC = () => {
       <S.Container>
         <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
           <Title text="My Projects" />
+
+          <S.Flex>
+            <S.Item
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="350"
+            >
+              <Image src={Ifuture} />
+            </S.Item>
+            <S.Item
+              data-aos="fade-down"
+              data-aos-duration="2000"
+              data-aos-delay="350"
+            >
+              <Image src={Ifuture} />
+            </S.Item>
+            <S.Item
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="350"
+            >
+              <Image src={Ifuture} />
+            </S.Item>
+          </S.Flex>
         </div>
         <S.ContainerButton data-aos="fade-right" data-aos-delay="200">
           <ArrowButton

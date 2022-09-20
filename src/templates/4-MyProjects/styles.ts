@@ -20,13 +20,6 @@ export const Container = styled.div`
     width: 950px;
   }
 `
-export const ContainerPill = styled.div`
-  margin-bottom: 8px;
-
-  @media (min-width: 1024px) {
-    margin-bottom: 24px;
-  }
-`
 export const ContainerButton = styled.div`
   display: flex;
   gap: 68px;
@@ -58,4 +51,14 @@ export const ContainerButtonBack = styled.div`
     bottom: 50%;
     right: 80px;
   }
+`
+export const Flex = styled.div`
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+`
+export const Item = styled.button`
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
 `
