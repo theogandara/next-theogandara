@@ -20,15 +20,24 @@ const StudyPlan: React.FC = () => {
     <LayoutDefault>
       <div id="section-5" />
       <S.Container>
-        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+        <S.Flex data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
           <Title text="Study Plan" />
 
-          <Pill text="what I'm learning" />
-          <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
+          <S.Section>
+            <S.ContainerPill>
+              <Pill text="what I'm learning" />
+            </S.ContainerPill>
+            <SubTitle text="ReactJS - NextJs (SSR, SSG) - Redux - ChakraUi" />
+          </S.Section>
 
-          <Pill text="what I want to learn" />
-          <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
-        </div>
+          <S.Section>
+            <S.ContainerPill>
+              <Pill text="what I want to learn" />
+            </S.ContainerPill>
+            <SubTitle text="Java - VueJs - Pinia - Elixir - Zustantd " />
+          </S.Section>
+        </S.Flex>
+
         <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             variant="Up"

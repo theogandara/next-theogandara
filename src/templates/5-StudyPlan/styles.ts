@@ -44,3 +44,9 @@ export const ContainerButtons = styled.div`
     left: 80px;
   }
 `
+export const Flex = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+`
+export const Section = styled.div``
