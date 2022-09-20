@@ -63,6 +63,10 @@ export const ContainerButtonBack = styled.div`
 export const Flex = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 32px;
+
+  @media (min-width: 1024px) {
+    gap: 64px;
+  }
 `
 export const Section = styled.div``
