@@ -4,8 +4,6 @@ export const Background = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
 `
 export const BackgroundBlur = styled.div`
   width: 100vw;

@@ -10,7 +10,6 @@ export default createGlobalStyle`
     }
 
     html{
-      scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
       }
 
@@ -19,7 +18,7 @@ export default createGlobalStyle`
         color: ${props => props.theme.colors.text};
         font-family: 'Inter', sans-serif;
         overflow-x: hidden;
-        scroll-snap-type: y mandatory;
+
         background-color: ${theme.colors.black};
 
 

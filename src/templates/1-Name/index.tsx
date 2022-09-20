@@ -18,7 +18,7 @@ const Name: React.FC = () => {
   }
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({ throttleDelay: 99, mirror: false })
     AOS.refresh()
   }, [])
 
@@ -26,7 +26,7 @@ const Name: React.FC = () => {
     <LayoutDefault>
       <div id="section-1" />
       <S.Container>
-        <div data-aos="fade-up" data-aos-delay="150">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <S.ContainerPill>
             <Pill text="Front End Developer" />
           </S.ContainerPill>
@@ -34,7 +34,7 @@ const Name: React.FC = () => {
           <Title text="Théo Gândara" />
           <SubTitle text="Welcome to my portfolio !" />
         </div>
-        <S.ContainerButtons>
+        <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             onClick={() =>
               NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })

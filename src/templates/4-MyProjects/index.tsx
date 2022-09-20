@@ -14,20 +14,15 @@ const MyProjects: React.FC = () => {
     console.log(NextSection)
   }
 
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <LayoutDefault>
       <div id="section-4" />
 
       <S.Container>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
           <Title text="My Projects" />
         </div>
-        <S.ContainerButtons>
+        <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             onClick={() =>
               NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })

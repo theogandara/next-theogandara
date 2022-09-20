@@ -16,24 +16,19 @@ const WorkStudy: React.FC = () => {
     console.log(NextSection)
   }
 
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <LayoutDefault>
       <div id="section-3" />
 
       <S.Container>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
           <Title text="Work and Study" />
           <Pill text="jobs history" />
           <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
           <Pill text="academic history" />
           <SubTitle text="saljdlkasjdklasjdklasjdlkasjdklsajdklasjd" />
         </div>
-        <S.ContainerButtons>
+        <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             onClick={() =>
               NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })

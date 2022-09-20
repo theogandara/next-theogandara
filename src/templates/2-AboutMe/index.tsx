@@ -15,17 +15,12 @@ const AboutMe: React.FC = () => {
     console.log(NextSection)
   }
 
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <LayoutDefault>
       <div id="section-2" />
 
       <S.Container>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
           <Title text="About Me" />
           <SubTitle
             text="Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
@@ -35,7 +30,7 @@ const AboutMe: React.FC = () => {
             deserunt reprehenderit elit laborum."
           />
         </div>
-        <S.ContainerButtons>
+        <S.ContainerButtons data-aos="fade-right" data-aos-delay="200">
           <ArrowButton
             onClick={() =>
               NextSection && NextSection?.scrollIntoView({ behavior: 'smooth' })
