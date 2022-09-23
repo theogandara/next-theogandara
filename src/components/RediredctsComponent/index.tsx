@@ -30,7 +30,7 @@ const RediredctsComponent: React.FC = () => {
       <S.Button
         onClick={() =>
           window.open(
-            'https://drive.google.com/file/d/1yVvf7Uoj5rGKHQdu9nb27pWytiPO2ed2/view?usp=sharing',
+            'https://drive.google.com/file/d/1QR4RwS9_ywEc2hjqcjs3s9k58slDP4C2/view?usp=sharing',
             '_blank'
           )
         }
